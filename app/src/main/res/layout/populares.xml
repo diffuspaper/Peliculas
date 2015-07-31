@@ -3,24 +3,25 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:padding="16dp"
     android:layout_height="match_parent">
-
-    <ImageView
-        android:background="@drawable/batman"
-        android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/tvNombrePelicula"
-        android:textSize="14pt"
-        android:text="Jurassic World"
-        android:layout_width="match_parent"
-        android:gravity="center_horizontal"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/tvAnioPelicula"
-        android:textSize="10pt"
-        android:text="2015"
-        android:gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@drawable/jurassic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_gravity="center"
+            android:id="@+id/imgPelicula" />
+        <TextView
+            android:id="@+id/tvTituloPelicula"
+            android:textSize="8pt"
+            android:text="Titulo de la pelicula"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvFechaEstreno"
+            android:textSize="6pt"
+            android:text="2015"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 </LinearLayout>

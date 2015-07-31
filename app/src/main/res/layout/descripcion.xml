@@ -1,128 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:padding="16dp"
+    android:orientation="vertical"
     android:background="@color/material_blue_grey_800"
     android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+            <ImageView
+                android:background="@drawable/jurassic"
+                android:layout_width="match_parent"
+                android:layout_height="110dp" />
 
+            <TextView
+                android:id="@+id/tvNombrePelicula"
+                android:text="Titulo de la pelicula"
+                android:layout_marginTop="10dp"
+                android:textSize="10pt"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-    <ImageView
-        android:background="@drawable/batman"
-        android:layout_width="match_parent"
-        android:layout_height="110dp" />
-
-    <TextView
-        android:id="@+id/tvNombrePelicula"
-        android:text="Titulo de la pelicula"
-        android:layout_marginTop="10dp"
-        android:textSize="10pt"
-        android:gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/tvFrasePelicula"
-        android:text="Frase de la pelicula"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="4dp"
-        android:textSize="8pt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <!--
-         Estreno
-     -->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:text="Fecha de estreno:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/tvFechaEstreno"
-            android:text="2015-05-01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <!--
-         Duración
-     -->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="4dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:text="Duración:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/tvDuracion"
-            android:text="120 Minutos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <!--
-     Rating
- -->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="4dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:text="Rating:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/tvRating"
-            android:text="7.6 (50 Votos)"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <!--
-        Cateogiras
-    -->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="4dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:text="Categorias:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/tvCategorias"
-            android:text="Terror, Comedia, etc."
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <!--
-    Sitio web
-    -->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_marginTop="4dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:text="Sitio web:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/tvSitioWeb"
-            android:text="www.jurassicworld.com"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <TextView
-        android:text="Resumen de la pelicula"
-        android:layout_weight="1"
-        android:layout_marginTop="4dp"
-        android:gravity="center_vertical|left|right"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvFrasePelicula"
+                android:text="Frase de la pelicula"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:textSize="8pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!--
+                 Estreno
+             -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Fecha de estreno:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvFechaEstreno"
+                    android:text="2015-05-01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--
+                 Duración
+             -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Duración:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvDuracion"
+                    android:text="120 Minutos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--
+             Rating
+         -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Rating:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:text="7.6 (50 Votos)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--
+                Cateogiras
+            -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Categorias:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvCategorias"
+                    android:text="Terror, Comedia, etc."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--
+            Sitio web
+            -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Sitio web:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvSitioWeb"
+                    android:text="www.jurassicworld.com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:text="Resumen de la pelicula"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical|left|right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
 </LinearLayout>

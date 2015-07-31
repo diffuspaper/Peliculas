@@ -4,7 +4,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:background="@drawable/batman"
+        android:background="@drawable/jurassic"
         android:layout_width="80dp"
         android:layout_height="100dp" />
     <LinearLayout
@@ -19,7 +19,8 @@
             android:textColor="@color/abc_primary_text_material_dark"
             android:background="@color/background_material_dark"
             android:layout_width="match_parent"
-            android:layout_height="30dp" />}
+            android:layout_height="30dp"
+            android:id="@+id/tvTituloPelicula" />}
         <LinearLayout
             android:orientation="vertical"
             android:padding="8dp"
