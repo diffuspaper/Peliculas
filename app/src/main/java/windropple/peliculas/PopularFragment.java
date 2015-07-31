@@ -36,6 +36,11 @@ public class PopularFragment extends ListFragment {
     }
 
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         peliculas = new ArrayList<>();
@@ -68,13 +73,11 @@ public class PopularFragment extends ListFragment {
 
     public void showDetail(long idPelicula){
         currentIdPelicula = idPelicula;
-
         PeliculaFragment peliculaFragment = (PeliculaFragment)getFragmentManager().findFragmentById(R.id.framePelicula);
         if(dualPane) {
             if (peliculaFragment == null || peliculaFragment.getIdShowPelicula() != currentIdPelicula) {
                 Log.i("TAGDEBUG", "Actualizaremos el fragmento");
                 peliculaFragment = PeliculaFragment.newInstance(currentIdPelicula);
-
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.framePelicula, peliculaFragment);
                 transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);

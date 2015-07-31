@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".PeliculaActivity" android:label="PeliculaActivity"></activity>
+        <activity android:name=".SettingsActivity" android:label="SettingsActivity"></activity>
     </application>
 
 </manifest>

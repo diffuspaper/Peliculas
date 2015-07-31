@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:title="Ajustes por default"
+        android:key="default_settings"
+        >
+        <PreferenceCategory
+            android:title="Categoria"
+            android:key="category">
+
+            <CheckBoxPreference
+                android:key="checkboxPreference"
+                android:title="Activar"
+                android:summaryOn="Toca para desactivar"
+                android:summaryOff="Toca para activar"
+                android:defaultValue="false"
+                />
+            <EditTextPreference
+                android:key="limit"
+                android:dependency="checkboxPreference"
+                android:title="Limite"
+                android:summary="Estableca un limite"
+                />
+        </PreferenceCategory>
+        <ListPreference
+            android:key="list_preference"
+            android:entries="@array/valuesNamePreferences"
+            android:entryValues="@array/valuesPreferences"
+            android:title="Opción"
+            android:summary="Seleccione opción"/>
+    </PreferenceScreen>
+</PreferenceScreen>
