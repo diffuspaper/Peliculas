@@ -1,5 +1,6 @@
 package windropple.peliculas;
 
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
@@ -10,6 +11,9 @@ public class SettingsActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction().add(android.R.id.content, new SettingsFragment()).commit();
+        setContentView(R.layout.settings_activity);
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.preferences_container, new SettingsFragment());
+        fragmentTransaction.commit();
     }
 }

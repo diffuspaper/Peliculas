@@ -28,5 +28,8 @@
             android:entryValues="@array/valuesPreferences"
             android:title="Opción"
             android:summary="Seleccione opción"/>
+        <windropple.clases.CustomPreference
+            android:defaultValue="75"
+            android:key="pref_vol"/>
     </PreferenceScreen>
 </PreferenceScreen>
